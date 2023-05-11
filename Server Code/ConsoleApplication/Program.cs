@@ -78,10 +78,10 @@ namespace ConsoleApplication1
                 {
                   
                     NetworkStream networkStream = clientSocket.GetStream();
-                    networkStream.Read(bytesFrom, 0, bytesFrom.Length);//malet bytes from data
+                    networkStream.Read(bytesFrom, 0, bytesFrom.Length);
                    
-                    dtfromC = System.Text.Encoding.ASCII.GetString(bytesFrom);//7aweltaha string
-                    dtfromC = dtfromC.Substring(0, dtfromC.IndexOf("$"));//fdelt a2ra lehad ma la2et dollar sign
+                    dtfromC = System.Text.Encoding.ASCII.GetString(bytesFrom);
+                    dtfromC = dtfromC.Substring(0, dtfromC.IndexOf("$"));
                     BroadCast(dtfromC, clientSocket, Client_nb);
                    
                     Console.WriteLine(" >> " + "From client-" + Client_nb + dtfromC);
