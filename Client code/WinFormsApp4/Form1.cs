@@ -48,12 +48,7 @@ namespace WinFormsApp4
 
         private void textBox1_TextChanged(object sender, DoWorkEventArgs e)
         {
-            //byte[] inStream = new byte[10025];
-            //serverStream.Read(inStream, 0, inStream.Length);
-            //string returndata = System.Text.Encoding.ASCII.GetString(inStream);
-            ////msg("Data from Server : " + returndata);
-            //label2.Text = ("Data :  " + returndata);
-
+           
             textBox1.Clear();
         }
 
